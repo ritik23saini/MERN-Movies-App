@@ -16,7 +16,9 @@ import {
   setUniqueYears,
 } from "../../redux/features/movies/moviesSlice";
 
+
 const AllMovies = () => {
+  
   const dispatch = useDispatch();
   const { data } = useGetAllMoviesQuery();
   const { data: genres } = useFetchGenresQuery();
